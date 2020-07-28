@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :portfolios, expect: [:show]
   get 'angular-items', to: 'portfolios#angular'
 
