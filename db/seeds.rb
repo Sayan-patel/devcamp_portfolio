@@ -44,3 +44,12 @@ end
 		thumb_image: "https://via.placeholder.com/150"
 	)
 end
+
+3.times do |technology|
+	Portfolio.last.technologies.create!(
+		name: "Technology #{technology}"
+		)
+end
+
+puts " 3 technolgies worked"
+
