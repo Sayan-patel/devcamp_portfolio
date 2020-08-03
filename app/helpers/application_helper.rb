@@ -20,4 +20,8 @@ module ApplicationHelper
     		content_tag(:p,greeting, class: "source-greeting")
         end 
   	end
+
+    def copyright_generator
+        SayanViewTool::Renderer.copyright 'Sayan patel', 'All rights reserved'
+    end
 end
