@@ -22,6 +22,6 @@ module ApplicationHelper
   	end
 
     def copyright_generator
-        SayanViewTool::Renderer.copyright 'Sayan patel', 'All rights reserved mast'
+        SayanViewTool::Renderer.copyright 'Sayan patel', 'All rights reserved'
     end
 end
