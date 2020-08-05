@@ -21,8 +21,9 @@
 
     <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">The bootstrap blog</h1>
+        <h1 class="blog-title">My blog</h1>
         <p class="lead blog-description"> An example blog template built with bootstap</p>
+        <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin)%>
       </div>
     </div>
 
@@ -62,7 +63,8 @@
               <li><a href="#">Facebook</a></li>
             </ol>
           </div>
-        </aside><!-- /.blog-sidebar -->
+        </aside>
+      </div><!-- /.blog-sidebar -->
 
         <footer class="blog-footer">
           <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
@@ -71,10 +73,8 @@
           </p>
         </footer>        
 
-        <%= render "shared/nav", location: 'bottom' %>
 
         <%= source_helper("blogs") %>
-      </div>
     </div>
   </body>
 </html>
