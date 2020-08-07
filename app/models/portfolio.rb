@@ -19,4 +19,8 @@ class Portfolio < ApplicationRecord
 		self.main_image ||= Placeholder.image_generator(height: '450', width: '300')
 		self.thumb_image ||= Placeholder.image_generator(height: '600', width: '500')
 	end
+
+	def self.by_position
+		order("position ASC")
+	end
 end
