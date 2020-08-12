@@ -3,7 +3,6 @@ class BlogsController < ApplicationController
   layout "blog"
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
 
-
   # GET /blogs
   # GET /blogs.json
   def index
@@ -21,7 +20,7 @@ class BlogsController < ApplicationController
 
   # GET /blogs/new
   def new
-    @blog = Blog.new
+    @blog = Blog.new    
   end
 
   # GET /blogs/1/edit
