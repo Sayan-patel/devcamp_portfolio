@@ -5,9 +5,9 @@
     
     <% if logged_in?(:site_admin)%>
     	<p class="blog-post-meta"> 
-    		<%= link_to blog.status , toggle_status_blog_path(blog) %> / 
-    		<%= link_to 'Edit', edit_blog_path(blog) if logged_in?(:site_admin) %> / 
-    		<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin)%>
+    		<%= link_to blog.status , toggle_status_blog_path(blog),class: 'btn btn-warning' %> | 
+    		<%= link_to 'EDIT', edit_blog_path(blog) ,class: 'btn btn-warning' %> | 
+    		<%= link_to 'DESTROY', blog, method: :delete, data: { confirm: 'Are you sure?' } ,class: 'btn btn-warning'%>
     	</p>
     <% end %>
 

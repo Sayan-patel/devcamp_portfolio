@@ -26,6 +26,14 @@
   </div>
 
   <div class="form-group">
+    <%= form.radio_button :status, 'DRAFT' %>
+    <%= form.label :status, 'DRAFT' %>
+
+    <%= form.radio_button :status, 'PUBLISH' %>
+    <%= form.label :status, 'PUBLISH' %>
+  </div>
+
+  <div class="form-group">
     <%= form.text_area :body ,class: 'form-control',rows: 15, placeholder: 'Contents'%>
   </div>
 

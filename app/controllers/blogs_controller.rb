@@ -78,10 +78,10 @@ class BlogsController < ApplicationController
   end
 
   def toggle_status
-    if @blog.draft?
-      @blog.publish!
-    elsif @blog.publish?
-      @blog.draft!
+    if @blog.DRAFT?
+      @blog.PUBLISH!
+    elsif @blog.PUBLISH?
+      @blog.DRAFT!
     end
 
     redirect_to blogs_url, notice: 'Post status has been updated.'
@@ -96,7 +96,7 @@ class BlogsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def blog_params
-      params.require(:blog).permit(:title, :body,:topic_id)
+      params.require(:blog).permit(:title, :body,:topic_id, :status)
     end
 
     def set_sidebar_topics
