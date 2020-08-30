@@ -27,6 +27,15 @@ a:hover {
  * Base structure
  */
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Lexend Peta', sans-serif;
+}
+
 html,
 body {
   height: 100%;
@@ -162,9 +171,22 @@ body {
   color: white;
 }
 
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;  
+}
 
+.cupwinner-csk {
+  color: orange;
+}
+.cupwinner-mi {
+  color: blue;
+}
 
-
+.blacky {
+  color: black;
+  margin-top: 15px;
+}
 
 
 

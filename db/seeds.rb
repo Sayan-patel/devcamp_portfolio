@@ -1,3 +1,21 @@
+User.create!(
+	email: "abd@rcb.com",
+	password: "abdabdabd",
+	password_confirmation: "abdabdabd",
+	name: "AB deVilliers",
+	roles: "site_admin"
+	)
+puts "Abhraham Benjamin de Villiers is here!"
+
+User.create!(
+	email: "vk@rcb.com",
+	password: "vkvkvk",
+	password_confirmation: "vkvkvk",
+	name: "Virat Kohli",
+	)
+puts "Virat Kohli is here!"
+
+
 3.times do |topic|
 	Topic.create!(
 		title: "Topic #{topic}"
