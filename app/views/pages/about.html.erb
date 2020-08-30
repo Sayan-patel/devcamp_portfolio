@@ -14,7 +14,31 @@
 		<p>Royal Challengers Bangalore</p>
 	</div>
 </div>
+<div class="col-md-12">
+	<p>
+		<button 
+			class = "btn btn-primary"
+			type = "button"
+			data-toggle = "collapse"
+			data-target = "#cupWinners"
+			aria-expanded = "false"
+			aria-controller ="cupWinners"
+		>
+			Cup Winners
+		</button>
+	</p>
 
+	<p>
+		<div class ="collapse" id="cupWinners">
+			<div class = "card card-block cupwinner-csk">
+				Chennai Super Kings
+			</div>
+			<div class = "card card-block cupwinner-mi">
+				Mumbai Indians
+			</div>
+		</div>
+	</p>
+</div>
 <div class="col-md-12">
 	<%= image_tag "ipl_cover.jpeg",width: 1000, alt: "Profile Image" %>
 </div>
